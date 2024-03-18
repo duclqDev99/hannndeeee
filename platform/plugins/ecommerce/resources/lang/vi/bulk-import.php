@@ -1,0 +1,50 @@
+<?php
+
+return [
+    'name' => 'Nhập hàng loạt',
+    'loading_text' => 'Đang nhập',
+    'imported_successfully' => 'Nhập thành công.',
+    'please_choose_the_file_mime' => 'Vui lòng chọn loại file mime :types',
+    'please_choose_the_file' => 'Vui lòng chọn file',
+    'start_import' => 'Bắt đầu nhập',
+    'note' => 'Chú ý!',
+    'warning_before_importing' => 'Nếu đây là lần đầu tiên bạn sử dụng tính năng này, vui lòng đọc kỹ tài liệu hoặc liên hệ với Quản trị viên để truy cập chức năng chính xác!',
+    'results' => 'Kết quả: :success thành công, :failed thất bại',
+    'failures' => 'Thất bại',
+    'tables' => [
+        'import' => 'Nhập',
+    ],
+    'template' => 'Mẫu',
+    'rules' => 'Quy tắc',
+    'choose_file_with_mime' => 'Chọn file với mime: (:types)',
+    'choose_file' => 'Chọn file',
+    'menu' => 'Nhập sản phẩm',
+    'download-csv-file' => 'Tải xuống mẫu CSV',
+    'download-excel-file' => 'Tải xuống mẫu Excel',
+    'downloading' => 'Đang tải xuống...',
+    'export' => [
+        'template' => [
+            'input_error' => 'Lỗi nhập liệu',
+            'number_not_allowed' => 'Không chấp nhận số!',
+            'allowed_input' => 'Đầu vào được chấp nhận',
+            'prompt_decimal' => 'Chỉ chấp nhận số hoặc số thập phân lớn hơn hoặc bằng :min.',
+            'prompt_whole_number' => 'Chỉ chấp nhận số nguyên lớn hơn hoặc bằng :min.',
+            'prompt_list' => 'Vui lòng chọn một giá trị từ danh sách thả xuống.',
+            'pick_from_list' => 'Chọn từ danh sách',
+            'value_not_in_list' => 'Giá trị không nằm trong danh sách.',
+        ],
+    ],
+    'import_failed_description' => 'Nhập thất bại, vui lòng kiểm tra lỗi bên dưới!',
+    'column' => 'Cột',
+    'row' => 'Hàng',
+    'attribute' => 'Thuộc tính',
+    'errors' => 'Lỗi',
+    'import_types' => [
+        'name' => 'Loại nhập',
+        'all' => 'Tất cả',
+        'products' => 'Sản phẩm',
+        'variations' => 'Biến thể',
+    ],
+    'import_products' => 'Nhập sản phẩm',
+];
+

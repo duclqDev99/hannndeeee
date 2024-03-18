@@ -1,0 +1,7 @@
+{
+    "name": "Tomorow",
+    "namespace": "Theme\\Tomorow\\",
+    "description": "Ecommerce HASA Fashion Shop",
+    "author": "Botble Technologies",
+    "required_plugins": ["botble/widget-custom"]
+}

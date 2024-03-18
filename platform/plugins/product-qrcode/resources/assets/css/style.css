@@ -1,0 +1,23 @@
+
+@media (min-width: 1400px){
+    .container-xl{
+        max-width:none;
+    }
+}
+@media (min-width: 1200px){
+    .container-xl{
+        max-width:none;
+    }
+}
+
+.toast-warning {
+    background-color: rgb(208, 149, 23);
+}
+
+.toast-success {
+    background-color: rgb(23, 150, 46);
+}
+.toast-error {
+    background-color: rgba(216, 26, 26, 0.885);
+}
+

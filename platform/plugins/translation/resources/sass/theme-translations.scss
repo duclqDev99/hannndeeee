@@ -1,0 +1,37 @@
+.box-translation {
+    .table-responsive {
+        .dataTables_filter {
+            inset-inline-start: 20px;
+
+            input {
+                margin-inline-start: unset;
+            }
+        }
+
+        .dataTables_filter,
+        .dt-buttons {
+            top: 110px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .dataTables_filter {
+        position: unset !important;
+        margin-bottom: 1rem;
+    }
+
+    .alert-warning {
+        margin-bottom: 1rem !important;
+    }
+}
+
+.editable-input {
+    .form-control {
+        height: 34px;
+    }
+}
+
+.input-large {
+    width: 320px !important;
+}

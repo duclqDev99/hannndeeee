@@ -1,0 +1,20 @@
+
+.custom-icon-card {
+    border-radius: 30%;
+    color: #fff;
+}
+.bg-pink{
+    background-color: #D6336C;
+}
+.bg-orange{
+    background-color:#F59F00;
+}
+
+.scrollable-element::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollable-element {
+    -ms-overflow-style: none; /* IE và Edge */
+    scrollbar-width: none; /* Firefox */
+}

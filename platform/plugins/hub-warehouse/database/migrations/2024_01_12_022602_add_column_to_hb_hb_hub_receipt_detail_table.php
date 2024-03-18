@@ -1,0 +1,35 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::table('hb_hub_receipt_detail', function (Blueprint $table) {
+            $table->string('color', 25)->nullable();
+            $table->string('size', 25)->nullable();
+        });
+        Schema::table('hb_proposal_hub_recepit_detail', function (Blueprint $table) {
+            $table->string('color', 25)->nullable();
+            $table->string('size', 25)->nullable();
+            $table->dropColumn('attribute');
+        });
+
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::table('hb_hub_receipt_detail', function (Blueprint $table) {
+            //
+        });
+    }
+};

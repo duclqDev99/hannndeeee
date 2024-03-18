@@ -1,0 +1,11 @@
+{
+    "id": "botble/showroom",
+    "name": "Showroom",
+    "namespace": "Botble\\Showroom\\",
+    "provider": "Botble\\Showroom\\Providers\\ShowroomServiceProvider",
+    "author": null,
+    "url": null,
+    "version": "1.0.0",
+    "description": "Plugin quản lý xuất nhập kho cho Showroom.",
+    "require": ["botble/warehouse-finished-products"]
+}

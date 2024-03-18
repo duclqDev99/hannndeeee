@@ -1,0 +1,26 @@
+name: Laravel Build and Deploy
+
+on:
+    push:
+      tags:
+        - 'prod-*.*.*'
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+    # - name: Checkout Repository
+    #   uses: actions/checkout@v2
+
+    # - name: Install NPM Dependencies
+    #   run: npm install
+
+    # - name: Build Assets
+    #   run: npm run prod
+    - name: Deploy to Laravel Server
+      run: |
+        cd /home/ubuntu/handee
+        git pull
+        npm i
+        npm run prod

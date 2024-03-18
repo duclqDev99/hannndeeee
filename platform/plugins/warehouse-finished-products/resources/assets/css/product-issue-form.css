@@ -1,0 +1,104 @@
+/* Overall Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+.ui-layout__item .card {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+.ui-layout__item .btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.ui-layout__item .btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.ui-layout__item .btn-primary:hover {
+    background-color: #218ed3;
+}
+
+@media (max-width: 768px) {
+    /* Add your responsive styles here */
+}
+.ui-layout__item #empty_scanned_message {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.ui-layout__item #form1 {
+    margin-top: 20px;
+}
+
+.ui-layout__item #open_scan_modal {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.ui-layout__item .loader {
+    text-align: center;
+    padding: 20px;
+}
+
+.ui-layout__item .loader img {
+    width: 50px;
+}
+
+
+.ui-layout__item .item__product {
+    border-bottom: 1px solid #ddd;
+}
+
+.ui-layout__item .product-info {
+    display: flex;
+    align-items: center;
+}
+
+.ui-layout__item .product-info .wrap-img {
+    margin-right: 10px;
+}
+
+
+.ui-layout__item .quantity-info {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+.ui-layout__item .value-quantity {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}

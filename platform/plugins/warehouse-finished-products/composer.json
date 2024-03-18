@@ -1,0 +1,20 @@
+{
+  "name": "botble/hub",
+  "description": "Hub package",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "Botble\\Hub\\": "src"
+    }
+  },
+  "require": {
+
+  },
+  "extra":{
+    "laravel":{
+      "providers":[
+        "Botble\\Hub\\Providers\\HubServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.slick-slider {
+    .slick-slide {
+        outline: none;
+        box-shadow: 0 0 rgba(#000, 0);
+
+        &:focus,
+        &:active,
+        &:hover {
+            outline: none;
+        }
+    }
+}
+
+.owl-carousel{
+    height: 750px;
+    .owl-item {
+        max-height: 750px;
+        height: 750px;
+    
+        .slider-item {
+            margin: 0;
+            max-height: 750px;
+            height: 100%;
+
+            .slider__content{
+                height: 100%;
+            }
+        }
+
+        img{
+            height: 100%;
+        }
+    }
+} 
+
+
+
+.carousel-slider{
+    height: auto;
+
+    .owl-item{
+        height: 100%;
+    }
+}
+
+.carousel--nav {
+    .owl-nav {
+        > * {
+            i {
+                color: $color-heading;
+            }
+        }
+    }
+}
+
+
+#nonlinear {
+    width: 96%;
+    margin: 10px auto;
+}
+
+.noUi-connect {
+    background-color: $color-1st;
+}
+
+.noUi-horizontal {
+    height: 6px;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+    display: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 16px;
+    height: 16px;
+    left: -17px;
+    top: -6px;
+    outline: none;
+    background-color: $color-1st;
+}
+
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -7px;
+}
+
+.noUi-handle {
+    border: 3px solid $color-1st;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.feature-product-category{
+    background-color: #faf8f2;
+    padding-bottom: 60px;
+
+    .cat_slider{
+        .owl-item{
+            .wrap-img{
+                overflow: hidden;
+                border-radius: 50%;
+                background-color: transparent;
+                aspect-ratio: 1/1;
+                margin-bottom: 10px;
+
+                img{
+                    transition: all .3s ease-in;
+                }
+            }
+        }
+
+        .item:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .feature-product-category{
+        padding-bottom: 0px;
+    }
+}

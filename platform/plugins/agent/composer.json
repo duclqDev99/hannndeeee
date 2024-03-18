@@ -1,0 +1,20 @@
+{
+  "name": "botble/agent-issue",
+  "description": "AgentIssue package",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "Botble\\AgentIssue\\": "src"
+    }
+  },
+  "require": {
+
+  },
+  "extra":{
+    "laravel":{
+      "providers":[
+        "Botble\\AgentIssue\\Providers\\AgentIssueServiceProvider"
+      ]
+    }
+  }
+}

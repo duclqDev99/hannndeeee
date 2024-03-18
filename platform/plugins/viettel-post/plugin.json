@@ -1,0 +1,10 @@
+{
+    "id": "botble/viettel-post",
+    "name": "Viettel Post",
+    "namespace": "Botble\\ViettelPost\\",
+    "provider": "Botble\\ViettelPost\\Providers\\ViettelPostServiceProvider",
+    "author": "Botble Technologies",
+    "url": "https://botble.com",
+    "version": "1.0.0",
+    "description": "Multi-Carrier Viettel Post Shipping Rates & Address Validation for Ecommerce"
+}

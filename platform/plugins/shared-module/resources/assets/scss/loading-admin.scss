@@ -1,0 +1,89 @@
+.cls-1 {
+    stroke-width: 0px;
+}
+.cls-2 {
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 9px;
+}
+
+.dataTables_processing, .loading-spinner{
+    display: flex;
+    justify-content: center;
+}
+.dataTables_processing .loader-frame, .loading-spinner .loader-frame {
+    z-index: 2;
+    overflow: visible;
+    display: flex !important;
+    padding-bottom: 5px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    animation: unset !important;
+    background: unset !important;
+}
+
+.loader-container {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background: rgba(0, 0, 0, 0.1);
+  }
+.dataTables_processing .loader-container{
+    background: rgba(0, 0, 0, 0) !important;
+
+}
+#app .page>.loader-container .logo-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.page .loading-spinner .loader-frame{
+    padding-top:20vh;
+}
+.dataTables_processing .logo-loading .cls-2, .loading-spinner .logo-loading .cls-2,
+body .loader-container .loader-frame .logo-loading .cls-2, body .loader-container .loader-frame .loading-spinner .logo-loading .cls-2 {
+    fill: none;
+    stroke-dasharray: 500px;
+    /*<-- Play with this number until it look cool */
+    stroke: black;
+    animation: load 15s infinite linear !important;
+}
+
+@keyframes load {
+    0% {
+        stroke-dashoffset: 0px;
+    }
+
+    100% {
+        stroke-dashoffset: 9000px;
+        /* <-- This number should always be 10 times the number up there*/
+    }
+}
+
+@keyframes blinking {
+
+    0%,
+    100% {
+        fill: #000000;
+        /* Màu ban đầu của đa giác */
+        filter: none;
+        /* Không có hiệu ứng mờ */
+    }
+
+    50% {
+        fill: #C0C0C0;
+        /* Màu khi nhấp nháy */
+    }
+}
+.dataTables_wrapper .dataTables_processing:after{
+    content: none !important;
+}

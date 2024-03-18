@@ -1,0 +1,10 @@
+{
+    "id": "botble/GHTK",
+    "name": "Giao hàng tiết kiệm",
+    "namespace": "Botble\\GHTK\\",
+    "provider": "Botble\\GHTK\\Providers\\GHTKServiceProvider",
+    "author": "Minh Cuong",
+    "url": "",
+    "version": "1.0.0",
+    "description": "Quản lý vận đơn giaohangtietkiem"
+}

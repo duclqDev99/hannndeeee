@@ -1,0 +1,9 @@
+.form-fieldset.storehouse-info, input[name="with_storehouse_management"],input[name="with_storehouse_management"] + label{
+    display: none !important;
+}
+.notification-content .list-group-item.active{
+    background-color: var(--secondary-color);
+}
+.notification-content .text-muted{
+    color: var(--bb-secondary-color) !important;
+}

@@ -1,0 +1,75 @@
+@use 'ultils' as *;
+
+.#{$prefix}-product {
+    &-attribute {
+        &-list {
+            & div {
+                width: 26px;
+                height: 26px;
+                transition: box-shadow 0.2s 0s linear;
+
+                & span.#{$prefix}-product-color-attribute,
+                & img {
+                    position: absolute;
+                    top: 50%;
+                    inset-inline-start: 50%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fff;
+                    transition: all 0.2s 0s linear;
+                    transform: translate(-50%, -50%);
+                }
+
+                & .#{$prefix}-product-attribute-tooltip {
+                    position: absolute;
+                    bottom: 100%;
+                    inset-inline-start: 50%;
+                    transform: translateX(-50%) translateY(2px);
+                    width: max-content;
+                    background-color: #000;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 1;
+                    padding: 4px 6px;
+                    border-radius: 4px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition:
+                        opacity 0.3s ease,
+                        visibility 0.3s ease,
+                        transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+                    &::before {
+                        position: absolute;
+                        content: '';
+                        bottom: -6px;
+                        inset-inline-start: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 0;
+                        border-top: 6px solid #000;
+                        border-inline-start: 6px solid transparent;
+                        border-inline-end: 6px solid transparent;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    box-shadow: 0px 1px 2px rgba(1, 15, 28, 0.2);
+                    & span.#{$prefix}-product-color-attribute,
+                    img {
+                        transform: translate(-50%, -50%) scale(0.7);
+                    }
+                }
+                &:hover {
+                    & .#{$prefix}-product-attribute-tooltip {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translate(-50%) translateY(-6px);
+                    }
+                }
+            }
+        }
+    }
+}

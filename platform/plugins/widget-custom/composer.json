@@ -1,0 +1,25 @@
+{
+    "name": "botble/widget-custom",
+    "description": "Widget package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Botble\\WidgetCustom\\": "src"
+        }
+    },
+    "require": {
+        "botble/platform": "*@dev",
+        "botble/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Botble\\WidgetCustom\\Providers\\WidgetServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "Botble\\WidgetCustom\\Facades\\Widget",
+                "WidgetGroup": "Botble\\WidgetCustom\\Facades\\WidgetGroup"
+            }
+        }
+    }
+}

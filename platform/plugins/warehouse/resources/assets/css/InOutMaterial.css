@@ -1,0 +1,40 @@
+.table-container {
+    display: flex;
+}
+
+table {
+    border: 1px solid #ccc;
+    margin: 10px;
+    min-height: 100px; /* Set a minimum height to make dropping easier */
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    cursor: move;
+}
+
+td.dragging {
+    opacity: 0.5;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid
+{
+    border-color: unset!important;
+    background-image: unset!important;
+    padding-right: 0;
+    border: 1px solid #dee2e6!important;
+}
+
+.nav-tabs{
+    border-bottom: unset!important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+    background-color: unset!important;
+    border-color: #fff!important;
+}
+
+.select2-results__option[aria-disabled=true] {
+    cursor: not-allowed; /* hoặc bất kỳ kiểu con trỏ nào bạn muốn áp dụng */
+}
